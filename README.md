@@ -1,21 +1,21 @@
-**TextEditor**
+# TextEditor
 A minimalist, cross-platform text editor built with JavaFX, supporting .txt and basic .pdf file creation. Designed to run on Windows and Linux, this project demonstrates skills in Java, GUI development, file handling, and standalone application deployment.
 
 
-**Features**
+# Features
 -> Create, open, and save .txt files.
 -> Create basic .pdf files with text content.
 -> Minimalist UI using JavaFX.
 -> Cross-platform compatibility (Windows and Linux).
 -> Deployable as a native executable.
 
-**Prerequisites**
+# Prerequisites
 
 -> JDK 17 or later with JavaFX (e.g., Azul Zulu JDK 17 with JavaFX)
 -> Maven
 -> VS Code with Java Extension Pack (optional)
 
-**Setup (Linux)**
+# Setup (Linux)
 
 1) Install Azul Zulu JDK with JavaFX:tar -xzf zulu17.58.21-ca-fx-jdk17.0.15-linux_x64.tar.gz
         sudo mv zulu-17.jdk /opt/zulu-17
@@ -38,7 +38,7 @@ A minimalist, cross-platform text editor built with JavaFX, supporting .txt and 
 
 
 
-**Deployment (Linux)**
+# Deployment (Linux)
 ## Native Executable ##
 
 1) Build the .deb package:
@@ -51,15 +51,15 @@ sudo apt-get install -f
 
 
 
-**Troubleshooting**
+# Troubleshooting
 
-# If compilation errors occur:
+## If compilation errors occur:
   Clear Maven cache: rm -rf ~/.m2/repository
   Run: mvn clean install -U
   Ensure src/main/java/com/package/TextEditor.java exists.
 
 
-# If errors in VS Code:
+## If errors in VS Code:
 Add to ~/.vscode/settings.json:
     {
     "java.configuration.runtimes": [
@@ -75,7 +75,7 @@ Add to ~/.vscode/settings.json:
 
 Install native libraries: sudo apt-get install openjfx
 
-**Future Enhancements**
+# Future Enhancements
 
 -> PDF text extraction.
 -> Syntax highlighting for .py, .java files.
