@@ -70,5 +70,7 @@ Install native libraries:
 *  Syntax highlighting for .py, .java files.
 *  Custom app icon.
 
-### License
-_**@1nV0ker**_
+
+
+### About Me
+Checkout my [portfolio](https://1nv0ker7.github.io/Invoker.github.io/) for more projects!
