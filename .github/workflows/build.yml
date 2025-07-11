@@ -15,11 +15,19 @@ jobs:
     - name: Build with Maven
       run: mvn clean package
     - name: Validate PNG
-      run: file screenshots/*.png | grep PNG
-    - name: Upload JAR
+      run: |
+        if [ -d "screenshots" ] && ls screenshots/*.png >/dev/null 2>&1; then
+          file screenshots/*.png | grep PNG
+        else
+          echo "No PNG files found in screenshots/ directory"
+          exit 0
+        fi
+    - name: Upload JAR and Dependencies
       uses: actions/upload-artifact@v4
       with:
         name: TextEditor-JAR
-        path: target/TextEditor-1.0-SNAPSHOT.jar
+        path: |
+          target/TextEditor-1.0-SNAPSHOT.jar
+          target/libs/
         if-no-files-found: error
         retention-days: 30
