@@ -73,7 +73,14 @@ Install native libraries:
 *  Syntax highlighting for .py, .java files.
 *  Custom app icon.
 
-
+## Portfolio Note
+This project showcases expertise in:
+- JavaFX for cross-platform GUI development.
+- Apache PDFBox for PDF creation.
+- Maven for dependency management and build automation.
+- `jpackage` for creating native installers.
+- Git for version control, including resolving merge conflicts and syncing repositories.
+- GitHub Actions for CI/CD, updated to use `actions/upload-artifact@v4` to address deprecation.
 
 ### About Me
 Checkout my [portfolio](https://1nv0ker7.github.io/Invoker.github.io/) for more projects!
