@@ -47,7 +47,12 @@
 * `sudo dpkg -i dist/TextEditor-1.0-SNAPSHOT.deb`
 * `sudo apt-get install -f`
 
+## Artifacts
+The GitHub Actions workflow produces a `TextEditor-JAR` artifact, including the executable JAR (`TextEditor-1.0-SNAPSHOT.jar`) and dependencies (`libs/`), available for download from the [Actions](https://github.com/1nV0ker7/TextEditor/actions). To run:
 
+
+* `unzip TextEditor-JAR.zip -d TextEditor-JAR`
+* `java --module-path TextEditor-JAR/libs --add-modules javafx.controls,javafx.fxml,javafx.graphics -jar TextEditor-JAR/TextEditor-1.0-SNAPSHOT.jar`
 
 ## Troubleshooting
 
