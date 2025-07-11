@@ -10,6 +10,9 @@
 *  Cross-platform compatibility (Windows and Linux).
 *  Deployable as a native executable.
 
+## FlowChart
+![Text Editor Flowchart](screenshots/flowchart.png)
+
 ## Prerequisites
 
 * JDK 17 or later with JavaFX (e.g., Azul Zulu JDK 17 with JavaFX)
