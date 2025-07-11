@@ -44,7 +44,7 @@
 * `jpackage --name TextEditor --input target --main-jar TextEditor-1.0-SNAPSHOT.jar --main-class com.invoker.TextEditor --type deb --dest dist --linux-shortcut --linux-menu-group "Utility" --module-path target/libs --add-modules javafx.controls,javafx.fxml,javafx.graphics`
 
 2) Install:
-* `sudo dpkg -i dist/TextEditor-1.0.deb`
+* `sudo dpkg -i dist/TextEditor-1.0-SNAPSHOT.deb`
 * `sudo apt-get install -f`
 
 
